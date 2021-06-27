@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        td, table {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Table 1</caption>
+        <colgroup span="1" style="background-color: rgb(128, 128, 236);"></colgroup>
+        <colgroup span="3" style="background-color: greenyellow;"></colgroup>
+        <colgroup span="1" style="background-color: green;"></colgroup>
+        
+        <thead>
+            <tr>
+                <th></th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>a</td>
+                <td>cell 1a</td>
+                <td rowspan="2">cell 2ab</td>
+                <td rowspan="3">cell 3abc</td>
+                <td rowspan="4">cell 4abcd</td>
+            </tr>
+            <tr>
+                <td>b</td>
+                <td>cell 1b</td>
+                <!-- <td>cell 2b</td> -->
+                <!-- <td>cell 3b</td> -->
+                <!-- <td>cell 4b</td> -->
+            </tr>
+            <tr>
+                <td>c</td>
+                <td colspan="2">cell 1, 2c</td>
+                <!-- <td>cell 2c</td> -->
+                <!-- <td>cell 3c</td> -->
+                <!-- <td>cell 4c</td> -->
+            </tr>
+            <tr>
+                <td>d</td>
+                <!--  <td>cell 1d</td>  -->
+                <!--  <td>cell 2d</td>  -->
+                <td colspan="3">cell 1, 2, 3d</td>
+                <!--  <td>cell 3d</td>  -->
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td></td>
+                <td colspan="4">foot</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
