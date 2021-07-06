@@ -9,17 +9,22 @@
 <body>
     <h4>Forms: </h4>
     <form action="#" method="POST">
-        <p>
-            <label for="user_name">Enter Username: </label>
-            <input type="text" name="user_name" id="user_name" placeholder="User name">
-            
-        </p>
-        <p>
-            <label>Enter password: 
-                <input type="password" name="password" id="password" placeholder="Password">
-            </label>
-        </p>
-        <button type="submit">Log in</button>
+        <fieldset>
+            <legend>Login</legend>
+            <p>
+                <label for="user_name">Enter Username: </label>
+                <input type="text" name="user_name" id="user_name" placeholder="User name" required>
+            </p>
+            <p>
+                <label>Enter password: 
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </label>
+            </p>
+            <p>
+                <button type="submit">Log in</button>
+                <button type="reset">Reset</button>
+            </p>
+        </fieldset>
     </form>
 </body>
 </html>
