@@ -12,16 +12,67 @@
         <fieldset>
             <legend>Login</legend>
             <p>
-                <label for="user_name">Enter Username: </label>
-                <input type="text" name="user_name" id="user_name" placeholder="User name" required>
+                <label for="username">Enter Username: </label>
+                <input type="text" name="username" id="username" placeholder="Username" required>
             </p>
             <p>
                 <label>Enter password: 
-                    <input type="password" name="password" id="password" placeholder="Password" required>
+                    <input type="password" name="password" id="password" placeholder="password" required>
                 </label>
             </p>
             <p>
                 <button type="submit">Log in</button>
+                <button type="reset">Reset</button>
+            </p>
+        </fieldset>
+    </form>
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Registration</legend>
+            <input type="hidden" name="hidden_value" value="sfuv">
+            <p>
+                <label for="username">Enter Username: </label>
+                <input type="text" name="username" id="username" minlength="3" maxlength="30" placeholder="Username" required>
+            </p>
+            <p>
+                <label for="email">Enter email: </label>
+                <input type="email" name="email" id="email" placeholder="email adress" required>
+            </p>
+            <p>
+                <label for="age">Enter your age: </label>
+                <input type="number" name="age" id="age" min="18" placeholder="age" required>
+            </p>
+            <p>
+                <label>Enter password: 
+                    <input type="password" name="password" id="password" placeholder="password" required>
+                </label>
+            </p>
+            <p>
+                <label>Enter password again: 
+                    <input type="password" name="password2" id="password2" placeholder="Repeat password" minlength="8" required>
+                </label>
+            </p>
+            <p>
+                <label for="description">Account description</label><br>
+                <textarea name="description" id="descriprion" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <label for="avatarimg">Choose your avatar </label>
+                <input type="file" name="avatar" id="avatarimg" accept="image/png, image/jpeg">
+            </p>
+            <p>
+                Fav color: 
+                <input type="radio" name="color" value="red" id="red">
+                <label for="red">Czerwony</label>
+                <input type="radio" name="color" value="green" id="green">
+                <label for="green">Zielony</label>
+                <input type="radio" name="color" value="blue" id="blue">
+                <label for="blue">Niebieski</label>
+                <input type="radio" name="color" value="black" id="black">
+                <label for="black">Czarny</label>
+            </p>
+            <p>
+                <button type="submit">Register</button>
                 <button type="reset">Reset</button>
             </p>
         </fieldset>
