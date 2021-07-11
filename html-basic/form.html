@@ -39,6 +39,10 @@
                 <input type="email" name="email" id="email" placeholder="email adress" required>
             </p>
             <p>
+                <label for="tel">Phone number: </label>
+                <input type="tel" name="tel" id="tel">
+            </p>
+            <p>
                 <label for="age">Enter age: </label>
                 <input type="number" name="age" id="age" min="18" placeholder="age" required>
             </p>
@@ -63,13 +67,47 @@
             <p>
                 Fav color: 
                 <input type="radio" name="color" value="red" id="red">
-                <label for="red">Czerwony</label>
+                <label for="red">Red</label>
                 <input type="radio" name="color" value="green" id="green">
-                <label for="green">Zielony</label>
+                <label for="green">Green</label>
                 <input type="radio" name="color" value="blue" id="blue">
-                <label for="blue">Niebieski</label>
+                <label for="blue">Blue</label>
                 <input type="radio" name="color" value="black" id="black">
-                <label for="black">Czarny</label>
+                <label for="black">Black</label>
+                <input type="color" name="color" value="usercolor" id="usercolor">
+                <label for="usercolor">Other</label>
+            </p>
+            <p>
+                Fav brand:
+                <input type="checkbox" name="brand" value="VW" id="vw">
+                <label for="VW">Volkswagen</label>
+                <input type="checkbox" name="brand" value="Mercedes" id="mercedes">
+                <label for="mercedes">Mercedes</label>
+                <input type="checkbox" name="brand" value="Audi" id="audi">
+                <label for="brand">Audi</label>
+                <input type="checkbox" name="brand" value="KIA" id="kia">
+                <label for="kia">KIA</label>
+            </p>
+            <p>
+                <label for="datetime">Vehicle purchase date: </label>
+                <input type="datetime-local" id="datetime" name="datetime">                
+            </p>
+            <p>
+                <label for="distance">Car distance: </label>
+                <input type="range" name="distance" id="distance" min="1" max="150" step="1">
+            </p>
+            <p>
+                <label for="theme">Theme color: </label>
+                <select name="theme" id="theme">
+                    <optgroup label="Main">
+                        <option value="dark">Dark</option>
+                        <option value="light">Light</option>
+                    </optgroup>
+                    <optgroup label="Additional">
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                    </optgroup>
+                </select>
             </p>
             <p>
                 <button type="submit">Register</button>
