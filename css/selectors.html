@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+         header {
+            background-color: black;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        #logo {
+            width: 100%;
+            height: 200px;
+            margin-left:5px;
+        }
+
+        ul {
+            text-align: center;
+        }
+
+        li > a {
+            color: white;
+            font-family: Verdana;
+        }
+
+        ul li {
+            display: inline;
+            margin-left: 5px;
+        }
+
+        #header-gallery {
+            width: 100%;
+            height: 200px;
+            background: url('https://cdn.pixabay.com/photo/2018/12/01/09/53/network-3849202_1280.jpg') no-repeat center ;
+            background-size: cover;
+        }
+        
+        main {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        p + ol {
+            background-color: azure;
+            padding: 20px;
+        }
+
+        .item {
+            font-weight: bold;
+        }
+
+        ol ~ p {
+            font-style: italic;
+        }
+
+        main h1, main p {
+            font-family: Verdana;  
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Main page</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Terms</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header id="header-gallery"></header>
+    <main>
+        <article>
+            <h1>My holidays</h1>
+            <p>Lorem ipsum dolor sit amet.</p> 
+            <ol>
+                <li class="item">Isnalds</li>
+                <li class="item">Moutains</li>
+                <li class="item">Forests</li>
+                <li class="item">Lakes</li>
+            </ol>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam at doloremque ipsa assumenda itaque sequi veniam ab exercitationem ducimus est obcaecati sint dolore voluptate tenetur in, nostrum reiciendis ex impedit, vitae quas veritatis. Voluptatibus quisquam quasi provident perspiciatis veniam ullam nobis reiciendis alias quidem accusantium odit impedit doloremque rerum perferendis neque corporis, deserunt, voluptas debitis fugit eligendi nesciunt amet. Facilis qui ea, possimus expedita veritatis id alias, eaque ipsa est ex numquam odit quisquam et cupiditate magni laudantium perspiciatis, adipisci praesentium iste quasi quos ad tenetur. Nihil earum ex ea pariatur voluptatem, minus consectetur, distinctio dignissimos soluta, fugiat quia aspernatur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam at doloremque ipsa assumenda itaque sequi veniam ab exercitationem ducimus est obcaecati sint dolore voluptate tenetur in, nostrum reiciendis ex impedit, vitae quas veritatis. Voluptatibus quisquam quasi provident perspiciatis veniam ullam nobis reiciendis alias quidem accusantium odit impedit doloremque rerum perferendis neque corporis, deserunt, voluptas debitis fugit eligendi nesciunt amet. Facilis qui ea, possimus expedita veritatis id alias, eaque ipsa est ex numquam odit quisquam et cupiditate magni laudantium perspiciatis, adipisci praesentium iste quasi quos ad tenetur. Nihil earum ex ea pariatur voluptatem, minus consectetur, distinctio dignissimos soluta, fugiat quia aspernatur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam at doloremque ipsa assumenda itaque sequi veniam ab exercitationem ducimus est obcaecati sint dolore voluptate tenetur in, nostrum reiciendis ex impedit, vitae quas veritatis. Voluptatibus quisquam quasi provident perspiciatis veniam ullam nobis reiciendis alias quidem accusantium odit impedit doloremque rerum perferendis neque corporis, deserunt, voluptas debitis fugit eligendi nesciunt amet. Facilis qui ea, possimus expedita veritatis id alias, eaque ipsa est ex numquam odit quisquam et cupiditate magni laudantium perspiciatis, adipisci praesentium iste quasi quos ad tenetur. Nihil earum ex ea pariatur voluptatem, minus consectetur, distinctio dignissimos soluta, fugiat quia aspernatur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam at doloremque ipsa assumenda itaque sequi veniam ab exercitationem ducimus est obcaecati sint dolore voluptate tenetur in, nostrum reiciendis ex impedit, vitae quas veritatis. Voluptatibus quisquam quasi provident perspiciatis veniam ullam nobis reiciendis alias quidem accusantium odit impedit doloremque rerum perferendis neque corporis, deserunt, voluptas debitis fugit eligendi nesciunt amet. Facilis qui ea, possimus expedita veritatis id alias, eaque ipsa est ex numquam odit quisquam et cupiditate magni laudantium perspiciatis, adipisci praesentium iste quasi quos ad tenetur. Nihil earum ex ea pariatur voluptatem, minus consectetur, distinctio dignissimos soluta, fugiat quia aspernatur!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam at doloremque ipsa assumenda itaque sequi veniam ab exercitationem ducimus est obcaecati sint dolore voluptate tenetur in, nostrum reiciendis ex impedit, vitae quas veritatis. Voluptatibus quisquam quasi provident perspiciatis veniam ullam nobis reiciendis alias quidem accusantium odit impedit doloremque rerum perferendis neque corporis, deserunt, voluptas debitis fugit eligendi nesciunt amet. Facilis qui ea, possimus expedita veritatis id alias, eaque ipsa est ex numquam odit quisquam et cupiditate magni laudantium perspiciatis, adipisci praesentium iste quasi quos ad tenetur. Nihil earum ex ea pariatur voluptatem, minus consectetur, distinctio dignissimos soluta, fugiat quia aspernatur!</p>
+        </article>
+    </main>
+</body>
+</html>
