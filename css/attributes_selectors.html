@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Attributes Selectors</title>
+    <style>
+
+        [data-color] {
+            background-color: lightskyblue;
+            border: 2px double blue;
+            font-weight: bold;
+        }
+
+        [data-color="red"] {
+            background-color: red;
+            border: 2px dotted darkred;
+        }
+        
+        [data-green="light"] {
+            background-color: lightgreen;
+        }
+
+        /* It works regardless of the size of characters */
+        [data-green="dark" i] {
+            background-color: green;
+        }
+
+        /* It works when class name includes 'str' */
+        [class *= "str"] {
+            background-color: lightsalmon;
+        }
+
+        /* It works when class name includes 'small-text' and whitespaces around it */
+        [class ~= "small-text"] {
+            font-size: 5px;
+        }
+
+        /* It works when class name starts with 'small-text' */
+        [class ^= "small-text"] {
+            font-family: Tahoma;
+        }
+
+        /* It works when class name ends with 'block' */
+        [class $= "block"] {
+            padding: 5px;
+            margin: 10px;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div data-color>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eligendi delectus ipsam alias vero tempora commodi fugit incidunt, debitis consectetur recusandae consequatur libero voluptatum? Quo fugiat totam quos vitae fuga?</div>
+    <div data-color="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eligendi delectus ipsam alias vero tempora commodi fugit incidunt, debitis consectetur recusandae consequatur libero voluptatum? Quo fugiat totam quos vitae fuga?</div>
+    <div data-green="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eligendi delectus ipsam alias vero tempora commodi fugit incidunt, debitis consectetur recusandae consequatur libero voluptatum? Quo fugiat totam quos vitae fuga?</div>
+    <div data-green="dArk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eligendi delectus ipsam alias vero tempora commodi fugit incidunt, debitis consectetur recusandae consequatur libero voluptatum? Quo fugiat totam quos vitae fuga?</div>
+    <div class="smalltext str block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eligendi delectus ipsam alias vero tempora commodi fugit incidunt, debitis consectetur recusandae consequatur libero voluptatum? Quo fugiat totam quos vitae fuga?</div>
+    <div class="smAlL-text str block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eligendi delectus ipsam alias vero tempora commodi fugit incidunt, debitis consectetur recusandae consequatur libero voluptatum? Quo fugiat totam quos vitae fuga?</div>
+    <div class="small-text str block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eligendi delectus ipsam alias vero tempora commodi fugit incidunt, debitis consectetur recusandae consequatur libero voluptatum? Quo fugiat totam quos vitae fuga?</div>
+    <div class="small-text str block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, eligendi delectus ipsam alias vero tempora commodi fugit incidunt, debitis consectetur recusandae consequatur libero voluptatum? Quo fugiat totam quos vitae fuga?</div>
+    <p data-color>Lorem ipsum dolor sit amet.</p>
+    <p data-green="LIght">Lorem ipsum dolor sit amet.</p>
+    <p data-green="light">Lorem ipsum dolor sit amet.</p>
 </body>
 </html>
